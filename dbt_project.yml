@@ -37,8 +37,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   staging:
-    jaffle_shop:
-      +materialized= view
+      +materialized: view
   marts:
-    marketing:
       +materialized: table
